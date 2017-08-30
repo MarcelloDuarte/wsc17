@@ -1,5 +1,16 @@
 {
-    "require-dev": {
+    "require": {
         "kahlan/kahlan": "^3.1"
+    },
+    "autoload": {
+        "files": [
+            "Lesson3/Exercise3a.php",
+            "Lesson3/Exercise3b.php",
+            "Lesson3/Exercise3c.php",
+            "Lesson5/Exercise5a.php"
+        ]
+    },
+    "scripts": {
+        "test": "./runTests"
     }
 }

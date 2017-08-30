@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+if (file_exists($testFile = "Tests/{$argv[$argc - 1]}.spec.php")) {
+    exec("vendor/bin/kahlan --reporter=verbose --spec=$testFile", $output);
+    echo implode("\n", $output);
+} else {
+    exit ("usage: composer test exercise_number (e.g. composer test 1a)\n");
+}
